@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Institution number:</strong>
+  <%= @stat.INSTITUTION_NUMBER %>
+</p>
+
+<p>
+  <strong>Stats period:</strong>
+  <%= @stat.STATS_PERIOD %>
+</p>
+
+<p>
+  <strong>Transaction type:</strong>
+  <%= @stat.TRANSACTION_TYPE %>
+</p>
+
+<p>
+  <strong>Card organization:</strong>
+  <%= @stat.CARD_ORGANIZATION %>
+</p>
+
+<p>
+  <strong>Capture method:</strong>
+  <%= @stat.CAPTURE_METHOD %>
+</p>
+
+<p>
+  <strong>Iso mcc sum:</strong>
+  <%= @stat.ISO_MCC_SUM %>
+</p>
+
+<%= link_to 'Edit', edit_stat_path(@stat) %> |
+<%= link_to 'Back', stats_path %>

@@ -1,0 +1,41 @@
+<%= form_for(@stat) do |f| %>
+  <% if @stat.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stat.errors.count, "error") %> prohibited this stat from being saved:</h2>
+
+      <ul>
+      <% @stat.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :INSTITUTION_NUMBER %><br>
+    <%= f.number_field :INSTITUTION_NUMBER %>
+  </div>
+  <div class="field">
+    <%= f.label :STATS_PERIOD %><br>
+    <%= f.date_select :STATS_PERIOD %>
+  </div>
+  <div class="field">
+    <%= f.label :TRANSACTION_TYPE %><br>
+    <%= f.text_field :TRANSACTION_TYPE %>
+  </div>
+  <div class="field">
+    <%= f.label :CARD_ORGANIZATION %><br>
+    <%= f.text_field :CARD_ORGANIZATION %>
+  </div>
+  <div class="field">
+    <%= f.label :CAPTURE_METHOD %><br>
+    <%= f.text_field :CAPTURE_METHOD %>
+  </div>
+  <div class="field">
+    <%= f.label :ISO_MCC_SUM %><br>
+    <%= f.text_field :ISO_MCC_SUM %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile.Name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @profile.Email %>
+</p>
+
+<p>
+  <strong>Staff_ID:</strong>
+  <%= @profile.Staff_id %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @profile.Department %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @profile.Position %>
+</p>
+
+<p>
+  <strong>Access type:</strong>
+  <%= @profile.Access_type %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

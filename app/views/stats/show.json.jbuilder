@@ -1,0 +1,1 @@
+json.extract! @stat, :id, :INSTITUTION_NUMBER, :STATS_PERIOD, :TRANSACTION_TYPE, :CARD_ORGANIZATION, :CAPTURE_METHOD, :ISO_MCC_SUM, :created_at, :updated_at

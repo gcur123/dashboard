@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  INSTITUTION_NUMBER: 1
+  STATS_PERIOD: 2015-09-09
+  TRANSACTION_TYPE: MyString
+  CARD_ORGANIZATION: MyString
+  CAPTURE_METHOD: MyString
+  ISO_MCC_SUM: 9.99
+
+two:
+  INSTITUTION_NUMBER: 1
+  STATS_PERIOD: 2015-09-09
+  TRANSACTION_TYPE: MyString
+  CARD_ORGANIZATION: MyString
+  CAPTURE_METHOD: MyString
+  ISO_MCC_SUM: 9.99
